@@ -1,4 +1,6 @@
 # Spelletjes_Website
+Open and run the PHP file to start the website (or the index.html if you don't want the php functionality)
+## my project 
 This is my first ever independent project, I made it after following some beginner tutorials on javaScript, HTML, CSS and PHP, but there is still a LOT to learn. 
 As I often forget things I only see once, I tried to implement some of my learnings in this project to make it stick for longer. Of course I understand this is a very beginner-level project.
 ## The website itself
