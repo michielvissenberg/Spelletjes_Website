@@ -1,0 +1,198 @@
+/* algemene code */
+html{
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #0077b6, #03045e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    color: #caf0f8;
+    height: 100%;
+    overflow: none;
+}
+#bladHoofd{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 0;
+}
+h1{
+    margin: 10px 0;
+}
+#systeem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#keuzeMenu{
+    font-size: 1rem;
+    color: #caf0f8;
+    height: 100%;
+    width: 200px;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 5px 5px;
+    padding: 5px;
+    width: 90%;
+    font-weight: bold;
+    color: #caf0f8;
+    background-color: #0077b6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: #00b4d8;
+}
+#spelletjes{
+    width: 100%;
+    height: 100%;
+}
+
+/* sudoku code */
+#sudokuSpel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sudokuBtns{
+    display: flex;
+    flex-direction: row;
+}
+#sudokuVakEnMoeilijkheid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+#sudokuVak{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.squares{
+    border: 2px solid #03045e;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sudokuElement{
+    border: 1px solid #90e0ef;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.2px 0.3px;
+}
+p{
+    color: #03045e;
+    background-color: white;
+}
+input{
+    color: #0077b6;
+}
+#extraHard, #hard, #medium, #easy{
+    background-color: none;
+    border: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.difficulty{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#moeilijkheidSudoku{
+    background-color: #0077b6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    transition: background-color 0.3s;
+}
+#moeilijkheidSudoku:hover{
+    background-color: #00b4d8;
+}
+
+/* tetris code */
+#tetrisSpel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* galgje code */
+#galgjeSpel{
+    flex-direction: column;
+    align-items: center;
+}
+#galgjeBtns{
+    display: flex;
+    flex-direction: row;
+    min-width: 350px;
+}
+#galgjeSpelBord{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+#woordEnGalg{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#galg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 12rem;
+    border-radius: 10px;
+    background-color: #0077b6;
+    margin: 5px;
+}
+.galgImg{
+    display: none;
+}
+.displayGalg{
+    display: flex;
+}
+.galgjeLetterVak{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0077b6;
+}
+#lettersTeGokken{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lettersTeGokken{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelletjes MichielVis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bladHoofd">
+        <h1>Spelletjes</h1>
+    </div>
+    <div id="systeem">
+        <div id="keuzeMenu">
+            <button id="sudokuBtn" onclick="openSudoku()">Sudoku</button><br>
+            <button id="tetrisBtn" onclick="openTetris()">Tetris</button><br>
+            <button id="galgjeBtn" onclick="openGalgje()">Galgje</button><br>
+        </div>
+        <div id="spelletjes">
+            <! sudoku code>
+            <div id="sudokuSpel" style="display: none;">
+                <div id="sudokuBtns">
+                    <button onclick="generateSudoku()" id="generateSudoku">Genereer Sudoku</button>
+                    <button onclick="emptyOutSudoku()" id="stop">Maak leeg</button>
+                    <button onclick="checkSudokuSolution()" id="checkSolution">Controleer</button>
+                </div>
+                <div id="sudokuVakEnMoeilijkheid">
+                    <div id="moeilijkheidSudoku">
+                        <input type="radio" id="extraHard" name="difficulty"><label class="difficulty" for="extraHard">Extra Hard</label><br>
+                        <input type="radio" id="hard" name="difficulty"><label class="difficulty" for="hard">Hard</label><br>
+                        <input type="radio" id="medium" name="difficulty" checked="checked"><label class="difficulty" for="medium">Medium</label><br>
+                        <input type="radio" id="easy" name="difficulty"><label class="difficulty" for="easy">Easy</label><br>
+                    </div>
+                    <div id="sudokuVak" style="display: none;">
+                        <div class="squares" id="square1"></div>
+                        <div class="squares" id="square2"></div>
+                        <div class="squares" id="square3"></div>
+                        <div class="squares" id="square4"></div>
+                        <div class="squares" id="square5"></div>
+                        <div class="squares" id="square6"></div>
+                        <div class="squares" id="square7"></div>
+                        <div class="squares" id="square8"></div>
+                        <div class="squares" id="square9"></div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            
+            <! tetris code>
+            <div id="tetrisSpel" style="display: none;">
+                <embed src="./tetris.html" style="width:321px; height: 641px;">
+                <label>helaas kreeg ik tetris zelf niet voor elkaar dus bij deze een overgenomen versie</label>
+            </div>
+
+
+            <! galgje code>
+            <div id="galgjeSpel" style="display: none;">
+                <div id="galgjeBtns">
+                    <button onclick="newGalgjeGame()">Nieuw spel</button>
+                    <button onclick="giveUpGalgje()">Geef op</button>
+                </div>
+                <div id="galgjeSpelBord" style="display: none;">
+                    <div id="woordEnGalg">
+                        <div id="galg" class="galg">
+                            <img class="galgImg" src="galg0.png" alt="galg0">
+                            <img class="galgImg" src="galg1.png" alt="galg1">
+                            <img class="galgImg" src="galg2.png" alt="galg2">
+                            <img class="galgImg" src="galg3.png" alt="galg3">
+                            <img class="galgImg" src="galg4.png" alt="galg4">
+                            <img class="galgImg" src="galg5.png" alt="galg5">
+                            <img class="galgImg" src="galg6.png" alt="galg6">
+                            <img class="galgImg" src="galg7.png" alt="galg7">
+                            <img class="galgImg" src="galg8.png" alt="galg8">
+                        </div>
+                    </div>
+                    
+                    <div id="lettersTeGokken">
+                        <button class="lettersTeGokken" id="a" onclick="guessLetterA()">a</button>
+                        <button class="lettersTeGokken" id="b" onclick="guessLetterB()">b</button>
+                        <button class="lettersTeGokken" id="c" onclick="guessLetterC()">c</button>
+                        <button class="lettersTeGokken" id="d" onclick="guessLetterD()">d</button>
+                        <button class="lettersTeGokken" id="e" onclick="guessLetterE()">e</button>
+                        <button class="lettersTeGokken" id="f" onclick="guessLetterF()">f</button>
+                        <button class="lettersTeGokken" id="g" onclick="guessLetterG()">g</button>
+                        <button class="lettersTeGokken" id="h" onclick="guessLetterH()">h</button>
+                        <button class="lettersTeGokken" id="i" onclick="guessLetterI()">i</button>
+                        <button class="lettersTeGokken" id="j" onclick="guessLetterJ()">j</button>
+                        <button class="lettersTeGokken" id="k" onclick="guessLetterK()">k</button>
+                        <button class="lettersTeGokken" id="l" onclick="guessLetterL()">l</button>
+                        <button class="lettersTeGokken" id="m" onclick="guessLetterM()">m</button>
+                        <button class="lettersTeGokken" id="n" onclick="guessLetterN()">n</button>
+                        <button class="lettersTeGokken" id="o" onclick="guessLetterO()">o</button>
+                        <button class="lettersTeGokken" id="p" onclick="guessLetterP()">p</button>
+                        <button class="lettersTeGokken" id="q" onclick="guessLetterQ()">q</button>
+                        <button class="lettersTeGokken" id="r" onclick="guessLetterR()">r</button>
+                        <button class="lettersTeGokken" id="s" onclick="guessLetterS()">s</button>
+                        <button class="lettersTeGokken" id="t" onclick="guessLetterT()">t</button>
+                        <button class="lettersTeGokken" id="u" onclick="guessLetterU()">u</button>
+                        <button class="lettersTeGokken" id="v" onclick="guessLetterV()">v</button>
+                        <button class="lettersTeGokken" id="w" onclick="guessLetterW()">w</button>
+                        <button class="lettersTeGokken" id="x" onclick="guessLetterX()">x</button>
+                        <button class="lettersTeGokken" id="y" onclick="guessLetterY()">y</button>
+                        <button class="lettersTeGokken" id="z" onclick="guessLetterZ()">z</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
